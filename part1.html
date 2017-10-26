@@ -72,25 +72,27 @@ function display_table(classname){
 
     for(i=0;i<elements.length;i++){document.getElementById(elements[i].id).innerHTML = str;}
 };
+
 </script>
 
 
 <body onload="display_table('tables');">
+    
+    <h2>Table-1</h2>
+    <div class="tables" id="table1"></div>
 
+    <br>
 
-<h2>Table-1</h2>
-<div class="tables" id="table1"></div>
-<br>
+    <div class="box">
+        <h2>Table-2</h2>
+        <p>
+    	   This shows that the same table can be included in any number of elements in the html page just by adding <strong> class="tables"</strong> and giving it a different <strong>id= "id_name"</strong> in the element tag.
+        <br>
+    	   Basically, by providing an <strong>id</strong> attribute it will make the code flexible enough to uniquely identify each copy of the table, and could help in styling any copy of the table differenlty or modifying any copy obased on the <strong>id</strong>.
+        </p>
+        <p class="tables" id="table2"></p>	
+    </div>
 
-<div class="box">
-<h2>Table-2</h2>
-<p>
-	This shows that the same table can be included in any number of elements in the html page just by adding <strong> class="tables"</strong> and giving it a different <strong>id= "id_name"</strong> in the element tag.
-<br>
-	Basically, by providing an <strong>id</strong> attribute it will make the code flexible enough to uniquely identify each copy of the table, and could help in styling any copy of the table differenlty or modifying any copy obased on the <strong>id</strong>.
-</p>
-<p class="tables" id="table2"></p>	
-</div>
 </body>
 
 </html>
