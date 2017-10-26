@@ -58,7 +58,7 @@ var table_data = [ { first_name : 'Rose',
 
 function display_table(classname){
 
-	var elements = document.getElementsByClassName(classname);
+	var elements = document.getElementsByClassName(classname); 
 	var str = "<table><tr><th>First Name</th><th>Last Name</th><th>Home</th></tr>";
 
     table_data.forEach(function(d,i){
@@ -78,13 +78,13 @@ function display_table(classname){
 
 <body onload="display_table('tables');">
     
-    <h2>Table-1</h2>
+    <h2 align="center">Table 1</h2>
     <div class="tables" id="table1"></div>
 
     <br>
 
     <div class="box">
-        <h2>Table-2</h2>
+        <h2 align="center">Table 2</h2>
         <p>
     	   This shows that the same table can be included in any number of elements in the html page just by adding <strong> class="tables"</strong> and giving it a different <strong>id= "id_name"</strong> in the element tag.
         <br>
